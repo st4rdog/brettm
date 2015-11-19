@@ -11,7 +11,7 @@ featured-system-tutorials-limit: 3
 		<div class="grid-70 grid-parent">
 	
 			<section class="tutorials game featured">
-			{% assign sorted-tuts = site.tutorials | sort:"date" %}
+			{% assign sorted-tuts = site.projects | sort:"date" %}
 			{% assign index = 0 %}
 			{% assign gridSize = 1.0 | divided_by: page.featured-game-tutorials-limit | times: 100.0 %}
 			{% assign: gridRounded = gridSize | plus: 0.5 %}
