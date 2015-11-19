@@ -10,6 +10,38 @@ featured-system-tutorials-limit: 3
 
 		<div class="grid-70 grid-parent">
 	
+			<section>
+				<h2>Games</h2>
+				<ul>
+					
+					{% for i in site.projects %}
+					{% if i.isAvailable %}
+					{% if i.type == "game" %}
+					<li>
+						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+					</li>
+					{% endif %}
+					{% endif %}
+					{% endfor %}
+					
+				</ul>
+				
+				<h2>Web</h2>
+				<ul>
+					
+					{% for i in site.projects %}
+					{% if i.isAvailable %}
+					{% if i.type == "website" %}
+					<li>
+						<a href="{{ i.url | prepend: site.baseurl }}">{{ i.title }}</a>
+					</li>
+					{% endif %}
+					{% endif %}
+					{% endfor %}
+					
+				</ul>
+			</section>
+	
 			<section class="tutorials game featured">
 			{% assign sorted-tuts = site.projects | sort:"date" %}
 			{% assign index = 0 %}
