@@ -1,6 +1,6 @@
 # Site settings
-title: Unity Tuts
-email: your-email@domain.com
+title: Brett Munro
+email: st4rdog@gmail.com
 description: > # this means ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -8,26 +8,14 @@ description: > # this means ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 url: "http://localhost:4000"
-#url: "http://st4rdog.github.io"
-
-unity-url: "http://unity3d.com"
-unity-download-url: "http://forum.unity3d.com"
+#url: "http://st4rdog.github.io/brettm"
 
 markdown: kramdown
 
 collections:
-  news:
+  projects:
     output: true
-    permalink: /news/:path/
-  authors:
-    output: true
-    permalink: /author/:path/
-  tutorials:
-    output: true
-    permalink: /tutorial/:path/
-  references:
-    output: true
-    permalink: /reference/:path/
+    permalink: /project/:path/
 
 defaults:
   - scope:
@@ -37,16 +25,6 @@ defaults:
       layout: single-post
   - scope:
       path: ""
-      type: authors
-    values:
-      layout: single-author
-  - scope:
-      path: ""
-      type: tutorials
-    values:
-      layout: single-generic
-  - scope:
-      path: ""
-      type: references
+      type: projects
     values:
       layout: single-generic
