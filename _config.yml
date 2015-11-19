@@ -1,5 +1,5 @@
 # Site settings
-title: Brett Munro
+title: "Brett Munro"
 email: st4rdog@gmail.com
 description: > # this means ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -16,6 +16,9 @@ collections:
   projects:
     output: true
     permalink: /project/:path/
+  news:
+    output: true
+    permalink: /news/:path/
 
 defaults:
   - scope:
