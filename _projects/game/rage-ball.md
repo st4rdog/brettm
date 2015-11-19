@@ -5,6 +5,7 @@ date: 2015-11-19
 subtitle: "How to make a ball maze game!"
 bg-img-path: "/imgs/monstercatcher/001.jpg"
 bg-img-scale: 250%
+isAvailable: true
 type: game
 ---
-{{ title }} item page.
+{{ page.title }} item page.

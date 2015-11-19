@@ -1,10 +1,11 @@
 ---
-id: gRageBall
-title: "Rage Ball"
+id: gBitrim
+title: "Bitrim"
 date: 2015-11-19
-subtitle: "How to make a ball maze game!"
+subtitle: "Subtitle!"
 bg-img-path: "/imgs/monstercatcher/001.jpg"
 bg-img-scale: 250%
+isAvailable: true
 type: game
 ---
-{{ title }} item page.
+{{ page.title }} item page.
